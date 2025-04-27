@@ -1,5 +1,21 @@
 @startuml
+' Líneas existentes (ejemplo previo)
 class Ejemplo {
   +metodo()
 }
+
+' --- Nueva línea añadida ---
+class NuevaClase {
+  +atributo : string
+  +nuevoMetodo() : void
+}
+
+' Relación entre clases (agregada)
+Ejemplo --> NuevaClase : "usa" 
+
+' Nota explicativa (opcional)
+note left of NuevaClase
+  Esta es una nueva clase
+  añadida al diagrama.
+end note
 @enduml
